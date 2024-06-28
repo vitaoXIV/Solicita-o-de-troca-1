@@ -55,7 +55,6 @@ header>form {
 
 form input {
    height: 35px;
-
    padding-left: 10px;
    border: none;
    outline: none;
@@ -169,6 +168,8 @@ section {
    width: 400px;
    height: 40px;
    justify-content: center;
+   outline: none;
+   text-decoration: none;
 }
 .buton-final{
    display: flex;
