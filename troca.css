@@ -14,19 +14,36 @@
 body {
    background-color: var(--cor-primaria);
 }
-
+#central-de-ajuda{
+   background-color: #545b3c;
+   justify-content: end;
+   padding: 20px;
+}
+#central-de-ajuda a{
+   color: white;
+}
 header {
    display: flex;
    background-color: var(--cor-primaria);
    justify-content: space-between;
    height: 135px;
    align-items: center;
-}
+   margin-right: 100px;
 
+}
+.logoM{
+   display: flex;
+   flex-direction: row-reverse;
+   align-items: center;
+   justify-content: center;
+}
+.logoM h1{
+
+   color: white;
+}
 .Login {
    display: flex;
    align-items: center;
-   flex-direction: column;
    margin: 0px 20px;
    font-size: 20px;
 }
@@ -46,10 +63,7 @@ header>h1 {
 header>form {
    position: relative;
    display: flex;
-   margin: 0px 20px;
    align-items: center;
-   background-color: WHITE;
-   border: 2px solid black;
    border-radius: 20px;
 }
 
@@ -59,20 +73,41 @@ form input {
    border: none;
    outline: none;
    border-radius: 20px;
+   width: 800px;
 }
 
-button {
+.lupa {
+   position: absolute;
+   left: 95%;
    background-color: transparent;
    border: none;
    outline: none;
    margin-right: 10px;
-}
 
+}
+.minha-lista{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.minha-lista a{
+   color: white;
+   font-size: 20px;
+}
+.trocas{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.trocas a{
+   color: white;
+   font-size: 20px;
+}
 ::-webkit-input-placeholder {
    color: var(--cor-primaria);
 }
 
-nav {
+.sub-menu{
    display: flex;
    justify-content: space-between;
    height: 31px;
@@ -180,6 +215,8 @@ section {
    margin-top: 40px;
    margin-bottom: 100px;
    font-size: 20px;
+   background-color: transparent;
+   border: none;
 }
 .buton-final a{
    color: black;
@@ -193,22 +230,53 @@ section {
 .buton-final .button-verde{
    background-color: #b5c18e;
 }
-@media only screen and (min-width:600px){
-   .form-mobile{
-      display: none;
-   }
-   .form-pc{
-      display: none;
-   }
-
+.btn-abrir-menu{
+   display: none;
+}
+.menu-aberto-mobile{
+   display: none;
+}
+.form-mobile{
+   display: none;
 }
 
+
+
+
+
 @media only screen and (min-width:200px) and (max-width:600px){ /*tela-mobile*/
-   nav{
+   .Login{
       display: none;
    }
+   #central-de-ajuda{
+      display: none;
+   }
+   .sub-menu{
+      display: none;
+   }
+
+   .menu{
+      display: block;
+   }
+   .minha-lista{
+      display:none;
+   }
+   .Login img{
+      display: none;
+   }
+   .Login a{
+      display: none;
+   }
+   .form-mobile{
+      display: block;
+   }
+   .trocas{
+      display: none;
+   }
+
    header{
       display: flex;
+      margin: 10px;
    }
    section .livro{
       display: flex;
@@ -249,6 +317,10 @@ section {
       border-radius: 0px;
       padding: 20px;
    }
+   .lupa{
+      background-color: transparent;
+      border: none;
+   }
    #formulario {
       display: flex;
       flex-direction: column;
@@ -276,6 +348,8 @@ section {
    }
    .buton-final{
       font-size: 14px;
+      background-color: transparent;
+      border: none;
 
    }
    .buton-final a{
@@ -283,4 +357,81 @@ section {
       margin-bottom: 30px;
       width: 190px;
    }
+   header nav#menu-pc{
+      display: none;
+  }
+  .btn-abrir-menu img{
+      color: #6201f4;
+      height: 40px ;
+  }
+  .overlay-menu-mobile{
+      background-color: rgba(0, 0, 0, 0.719);
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 88888;
+      display: none;
+  }
+  .menu-mobile{
+      background-color: #202127fa;
+      height: 100vh;
+      font-size: 2em;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 99999;
+      width: 0%;
+      overflow: hidden;
+  }
+  .menu-mobile.abrindo-menu{
+      width: 60%;
+      transition: 0.5s;
+  }
+  .menu-mobile.abrindo-menu ~ .overlay-menu-mobile{
+      display: block;
+  }
+  .menu-mobile ul{
+      font-family: Poppins;
+      font-weight: bold;
+      list-style: none;
+      margin-top: 40px;
+      text-align: left;
+      font-size: 20px;
+  }
+  .menu-mobile ul .cor{
+      color: green;
+  }
+  .menu-mobile ul li{
+      padding: 0 25px;
+      margin-bottom: 30px;
+  }
+  .menu-mobile ul li a{
+      text-decoration: none;
+      color: white;
+      display: block;
+  }
+  .menu-mobile ul li a:hover{
+      background-color: #6201f4;
+      padding: 10px;
+      border-radius: 10px;
+      transition: 0.4s;
+  }
+  .menu-mobile ul #responsavel-botao-do-menu{
+      text-align: center;
+      background-color: rgb(13, 99, 13);
+      border-radius: 10px;
+      padding: 5px 0px;
+  }
+  .btn-abrir-menu{
+   display: block;
 }
+.menu-aberto-mobile{
+   display: block;
+}
+.form-mobile{
+   display: block;
+}
+}
+
