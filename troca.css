@@ -17,10 +17,13 @@ body {
 #central-de-ajuda{
    background-color: #545b3c;
    justify-content: end;
-   padding: 20px;
+   padding: 10px;
+   display: flex;
 }
 #central-de-ajuda a{
    color: white;
+   display: flex;
+   justify-content: end;
 }
 header {
    display: flex;
@@ -239,10 +242,6 @@ section {
 .form-mobile{
    display: none;
 }
-
-
-
-
 
 @media only screen and (min-width:200px) and (max-width:600px){ /*tela-mobile*/
    .Login{
