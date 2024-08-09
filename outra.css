@@ -9,188 +9,347 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
- }
- 
- body {
-    background-color: var(--cor-primaria);
- }
- #central-de-ajuda{
-    background-color: #545b3c;
-    padding: 20px;
-    display: flex;
-    justify-content: end;
-    align-items: end;
     
  }
- #central-de-ajuda a{
-    color: white;
- }
- header {
-    display: flex;
-    background-color: var(--cor-primaria);
-    justify-content: space-between;
-    height: 135px;
-    align-items: center;
-    margin-right: 100px;
- 
- }
- .logoM{
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: center;
- }
- .logoM h1{
- 
-    color: white;
- }
- .Login {
-    display: flex;
-    align-items: center;
-    margin: 0px 20px;
-    font-size: 20px;
- }
- 
- .Login a {
-    color: white;
- }
- 
- header>h1 {
-    display: flex;
-    align-items: center;
-    flex-direction: column-reverse;
-    color: white;
-    font-size: 30px;
- }
- 
- header>form {
-    position: relative;
-    display: flex;
-    align-items: center;
-    border-radius: 20px;
- }
- 
- form input {
-    height: 35px;
-    padding-left: 10px;
-    border: none;
-    outline: none;
-    border-radius: 20px;
-    width: 800px;
- }
- 
- .lupa {
-    position: absolute;
-    left: 95%;
-    background-color: transparent;
-    border: none;
-    outline: none;
-    margin-right: 10px;
- 
- }
- .minha-lista{
-    display: flex;
-    align-items: center;
-    justify-content: center;
- }
- .minha-lista a{
-    color: white;
-    font-size: 20px;
- }
- .trocas{
-    display: flex;
-    align-items: center;
-    justify-content: center;
- }
- .trocas a{
-    color: white;
-    font-size: 20px;
- }
- ::-webkit-input-placeholder {
-    color: var(--cor-primaria);
- }
- 
- .sub-menu{
-    display: flex;
-    justify-content: space-between;
-    height: 31px;
-    background-color: var(--cor-secundaria);
- }
- 
- nav a {
-    display: flex;
-    align-items: center;
-    color: var(--cor-primaria);
-    font-size: 20px;
-    margin: 0px 30px;
-    text-decoration: none;
- }
- 
- span {
-    margin: auto;
-    border: 1px solid var(--cor-primaria);
-    height: 15px;
- }
-section{
-   display: flex;
-   align-items: center;
-   margin: auto;
-   justify-content: center;
-   margin-top: 100px;
-   border: 2px solid white;
-   width: 1200px;
-   border-radius: 10px;
-   height: 400px;
-}
 
-.proprietario{
-   display: flex;
-   align-items: center;
-   background-color: var(--cor-terciaria);
-   width: 250px;
-   border-radius: 5px;
-   height: 100px;
-   margin-right: 10px;
-}
-.proprietario h2{
-   margin-left: 10px;
-}
-.capa1{
-   margin-right: 50px;
-}
-.livro{
-   align-items: center;
-   margin-right: 20px;
 
-}
-.livro2{
-   align-items: center;
-   margin-left: 30px;
-}
-.contato{
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   margin-top: 20px;
-}
+   body {
+      background-color: var(--cor-primaria);
+   }
+   #central-de-ajuda{
+      background-color: #545b3c;
+      padding: 20px;
+      display: flex;
+      justify-content: end;
+      align-items: end;
+      
+   }
+   #central-de-ajuda a{
+      color: white;
+   }
+   header {
+      display: flex;
+      background-color: var(--cor-primaria);
+      justify-content: space-between;
+      height: 135px;
+      align-items: center;
+      margin-right: 100px;
+   
+   }
+   .logoM{
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      justify-content: center;
+   }
+   .logoM h1{
+   
+      color: white;
+   }
+   .Login {
+      display: flex;
+      align-items: center;
+      margin: 0px 20px;
+      font-size: 20px;
+   }
+   
+   .Login a {
+      color: white;
+   }
+   
+   header>h1 {
+      display: flex;
+      align-items: center;
+      flex-direction: column-reverse;
+      color: white;
+      font-size: 30px;
+   }
+   
+   header>form {
+      position: relative;
+      display: flex;
+      align-items: center;
+      border-radius: 20px;
+   }
+   
+   form input {
+      height: 35px;
+      padding-left: 10px;
+      border: none;
+      outline: none;
+      border-radius: 20px;
+      width: 800px;
+   }
+   
+   .lupa {
+      position: absolute;
+      left: 95%;
+      background-color: transparent;
+      border: none;
+      outline: none;
+      margin-right: 10px;
+   
+   }
+   .minha-lista{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+   .minha-lista a{
+      color: white;
+      font-size: 20px;
+   }
+   .trocas{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+   .trocas a{
+      color: white;
+      font-size: 20px;
+   }
+   ::-webkit-input-placeholder {
+      color: var(--cor-primaria);
+   }
+   
+   .sub-menu{
+      display: flex;
+      justify-content: space-between;
+      height: 31px;
+      background-color: var(--cor-secundaria);
+   }
+   
+   nav a {
+      display: flex;
+      align-items: center;
+      color: var(--cor-primaria);
+      font-size: 20px;
+      margin: 0px 30px;
+      text-decoration: none;
+   }
+   
+   span {
+      margin: auto;
+      border: 1px solid var(--cor-primaria);
+      height: 15px;
+   }
+   .livro{
+      display: flex;
+   }
+   .dono{
+      display: flex;
+      flex-direction: column;
+      background-color: var(--cor-terciaria);
+      width: 250px;
+      height: 60px;
+      border-radius: 10px;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+   }
+   .livro-png{
+      margin-right: 50px;
+   }
+   section{
+      display: flex;
+      margin: auto;
+      justify-content: center;
+      margin-top: 100px;
+   }
+   .informacao{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 0px 20px;
+   }
+   .center{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+   }
+   .btn-abrir-menu{
+     display: none;
+   }
+   .menu-aberto-mobile{
+     display: none;
+   }
+   .form-mobile{
+     display: none;
+   }
+   .menu{
+     display: none;
+   }
+@media (max-width: 600px){
+   .Login{
+      display: none;
+   }
+   body{
+      background-color: var(--cor-primaria);
+   }
+   #central-de-ajuda{
+      display: none;
+   }
+   .sub-menu{
+      display: none;
+   }
 
-.contato button{
-   font-size: 18px;
-   margin-top: 10px;
-   padding: 15px 100px;
-   border-radius: 40px;
-   border: 1px solid white;
-   cursor: pointer;
-}
- .btn-abrir-menu{
-   display: none;
+   .menu{
+      display: block;
+   }
+   .minha-lista{
+      display:none;
+   }
+   .Login img{
+      display: none;
+   }
+   .Login a{
+      display: none;
+   }
+   .form-mobile{
+      display: block;
+   }
+   .trocas{
+      display: none;
+   }
+   
+   header{
+      display: flex;
+      margin: 10px;
+   }
+   header h1{
+      margin-right: 20px;
+      font-size: 26px;
+   }
+   header .form-pc{
+      display: none;
+   }
+   header .Login{
+      display: flex;
+      justify-content: space-between;
+   }
+   .Login h1{
+      font-size: 16px;
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+   }
+   section{
+      display: flex;
+      flex-direction: column;
+   }
+   .capa1 img{
+      width:150px;
+   }
+   .capa2 img{
+      width: 150px;
+   }
+   .form-mobile{
+      position: relative;
+   }
+
+   .form-mobile button{
+      position: absolute;
+      left: 93%;
+      top: 10%;
+   }
+   .form-mobile input{
+      width: 100%;
+      border-radius: 0px;
+      padding: 20px;
+   }
+
+   .lupa{
+      background-color: transparent;
+      border: none;
+   }
+
+   .buton-final{
+      font-size: 14px;
+      background-color: transparent;
+      border: none;
+   }
+   .buton-final a{
+      margin-right: 15px;
+      margin-bottom: 30px;
+      width: 190px;
+   }
+   header nav#menu-pc{
+      display: none;
+  }
+  .btn-abrir-menu img{
+      color: #6201f4;
+      height: 40px ;
+  }
+  .overlay-menu-mobile{
+      background-color: rgba(0, 0, 0, 0.719);
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 88888;
+      display: none;
+  }
+  .menu-mobile{
+      background-color: #202127fa;
+      height: 100vh;
+      font-size: 2em;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 99999;
+      width: 0%;
+      overflow: hidden;
+  }
+  .menu-mobile.abrindo-menu{
+      width: 60%;
+      transition: 0.5s;
+  }
+  .menu-mobile.abrindo-menu ~ .overlay-menu-mobile{
+      display: block;
+  }
+  .menu-mobile ul{
+      font-family: Poppins;
+      font-weight: bold;
+      list-style: none;
+      margin-top: 40px;
+      text-align: left;
+      font-size: 20px;
+  }
+  .menu-mobile ul .cor{
+      color: green;
+  }
+  .menu-mobile ul li{
+      padding: 0 25px;
+      margin-bottom: 30px;
+  }
+  .menu-mobile ul li a{
+      text-decoration: none;
+      color: white;
+      display: block;
+  }
+  .menu-mobile ul li a:hover{
+      background-color: #6201f4;
+      padding: 10px;
+      border-radius: 10px;
+      transition: 0.4s;
+  }
+  .menu-mobile ul #responsavel-botao-do-menu{
+      text-align: center;
+      background-color: rgb(13, 99, 13);
+      border-radius: 10px;
+      padding: 5px 0px;
+  }
+  .btn-abrir-menu{
+   display: block;
 }
 .menu-aberto-mobile{
-   display: none;
+   display: block;
 }
 .form-mobile{
-   display: none;
+   display: block;
 }
-.menu{
-   display: none;
 }
+
+
